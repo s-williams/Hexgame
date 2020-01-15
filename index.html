@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/style.css" />
+    <link rel="stylesheet" type="text/css" href="hex-style.css" />
+    <title>SWilliams.io | Hexgame</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js></script>
+    <script src="hexgame.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="title"> <a rel="home" href="/">Hexgame</a></h1>
+    </header>
+    <div class="container">
+        <div id="game">
+            <div id="left">
+                <div id="messageBox">
+                </div>
+                <div id="entry">
+                    <span id="entryContent"></span>
+                </div>
+                <div id="gridContainer">
+                    <ul id="grid" class="clear">
+                        <li>
+                            <div class="hexagon fake-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon central-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon fake-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                        <li>
+                            <div class="hexagon outer-hexagon"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="controls">
+                    <div class="button" id="deleteButton">Delete</div>
+                    <div class="button" id="shuffleButton">Shuffle</div>
+                    <div class="button" id="enterButton">Enter</div>
+                </div>
+            </div>
+            <div id="right">
+                <div>Points: <span id="points">0</span></div>
+                <br />
+                <div id="foundWords"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
