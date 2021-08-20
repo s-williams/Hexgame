@@ -1,18 +1,14 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/resources/style.css" />
     <link rel="stylesheet" type="text/css" href="hex-style.css" />
-    <title>SWilliams.io | Hexgame</title>
+    <title>Hexgame</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js></script>
     <script src="hexgame.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <h1 class="title"> <a rel="home" href="/">Hexgame</a></h1>
-    </header>
     <div class="container">
         <div id="game">
             <div id="left">
@@ -60,6 +56,7 @@
             </div>
             <div id="right">
                 <div>Points: <span id="points">0</span></div>
+                <div>Number of words found: <span id="wordCount">0</span></div>
                 <br />
                 <div id="foundWords"></div>
             </div>

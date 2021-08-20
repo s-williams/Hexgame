@@ -1,3 +1,24 @@
+/*
+ * Base
+*/
+body {
+    display: grid;
+    font-size: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.5;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
+ * Game
+*/
 #game {
     display: flex;
     text-rendering: optimizeLegibility;
@@ -12,6 +33,7 @@
 #right {
     margin-right: 20px;
     width: calc(30% - 40px);
+    text-align: left;
 }
 
 #left,
@@ -26,14 +48,16 @@
 
 #left #entry,
 #left #messageBox {
-    padding: 8px;
+    margin: 0.1em;
+    margin-bottom: 0.5em;
     display: block;
     border: none;
     width: 100%;
     height: 40px;
-    font-size: 32px;
+    font-size: 1.5em;
     text-align: center;
     background: none;
+    text-transform: none;
 }
 
 #left #entry #entryContent {
@@ -41,24 +65,24 @@
     position: relative;
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
+    height: 1.5em;
 }
 
-#left #entry #entryContent.valid {
+.valid {
     color: #e7ad00;
 }
 
-#left #entry #entryContent.invalid {
+.invalid {
     color: #fffbee;
 }
 
 #left #entry #entryContent::after {
     content: "";
-    display: block;
     position: absolute;
-    right: -4px;
     top: 0;
+    right: 0;
     width: 2px;
-    height: 40px;
+    height: 1.25em;
     background-color: #e7ad00;
     -webkit-animation: 1000ms blink step-end infinite;
     animation: 1000ms blink step-end infinite;
@@ -109,16 +133,19 @@
     -ms-transform: skewY(-30deg) rotate(60deg);
     transform: skewY(-30deg) rotate(60deg);
     overflow: hidden;
-    font-size: 4vw;
+    font-size: 2.5em;
     font-weight: bold;
+    user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    cursor: pointer;
 }
 
 #grid li .central-hexagon {
     background: #fdbf00;
+    cursor: pointer;
 }
 
 #grid li .central-hexagon,
@@ -161,12 +188,18 @@
 
 #controls {
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: nowrap;
 }
 
 #controls .button {
-    padding: 4vw;
+    border-radius: 1.5em;
+    border: 1px solid #fffbee;
+    padding: 0.5em;
+    cursor: pointer;
 }
 
 @-webkit-keyframes blink {
@@ -240,7 +273,7 @@
 
 /* Mobile support */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     #game {
         display: block;
     }

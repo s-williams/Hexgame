@@ -9,6 +9,7 @@ let entryContent = null;
 let messageBox = null;
 let foundWords = null;
 let points = null;
+let wordCount = null;
 
 let dictionary = [];
 let foundWordsList = [];
@@ -24,6 +25,7 @@ const start = () => {
     messageBox = document.querySelector("#messageBox");
     foundWords = document.querySelector("#foundWords");
     points = document.querySelector("#points");
+    wordCount = document.querySelector("#wordCount");
 
     document.querySelector("#deleteButton").addEventListener("click", deleteLetter);
     document.querySelector("#shuffleButton").addEventListener("click", shuffle);
@@ -40,40 +42,63 @@ const start = () => {
     Math.seedrandom("" + today.getFullYear() + today.getMonth() + today.getDate());
 
     // set up game
-    fetch("sevenletterwords.txt").then((response) => {
-        return response.text().then((file) => {
-            const lines = file.split(/\n/g);
-            const count = (lines || []).length;
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("pangram")) {
+        if (urlParams.has("mid")) {
+            setUpWithWord(urlParams.get("pangram").toUpperCase(), urlParams.get("mid").toUpperCase());
+        } else {
+            setUpWithWord(urlParams.get("pangram").toUpperCase());
+        }
+    } else {
+        fetch("sevenletterwords.txt").then((response) => {
+            return response.text().then((file) => {
+                const lines = file.split(/\n/g);
+                const count = (lines || []).length;
 
-            const no = Math.floor(Math.random() * count);
-            const pangram = lines[no];
+                const no = Math.floor(Math.random() * count);
+                const pangram = lines[no].trim();
 
-            console.log(pangram);
+                console.log(pangram);
 
-            // remove duplicate letters
-            for (let i = 0; i < pangram.length - 1; i++) {
-                if (!pangramLetters.includes(pangram[i].toUpperCase())) {
-                    pangramLetters.push(pangram[i].toUpperCase());
-                }
-            }
-            shuffleArray(pangramLetters);
-            middleLetter = pangramLetters[Math.floor(Math.random() * pangramLetters.length)];
-            pangramLetters.splice(pangramLetters.indexOf(middleLetter), 1);
-
-            // for each unique letter in word, assign to hex
-            for (let i = 0; i < pangramLetters.length; i++) {
-                outerHexagons[i].innerText = pangramLetters[i];
-            }
-            centralHexagon.innerText = middleLetter;
+                setUpWithWord(pangram);
+            });
         });
-    });
+    }
 
     fetch("dictionary.txt").then((response) => {
         return response.text().then((file) => {
             dictionary = file.split(/\r\n/g);
+            if (urlParams.has("pangram")) {
+                dictionary.push(urlParams.get("pangram"));
+            }
         });
     });
 };
+
+/**
+ * Takes a seven letter word and processes it to set up the game
+ */
+const setUpWithWord = (pangram, mid) => {
+    // remove duplicate letters
+    for (let i = 0; i < pangram.length; i++) {
+        if (!pangramLetters.includes(pangram[i].toUpperCase())) {
+            pangramLetters.push(pangram[i].toUpperCase());
+        }
+    }
+    shuffleArray(pangramLetters);
+    if (mid && pangramLetters.includes(mid)) {
+        middleLetter = mid;
+    } else {
+        middleLetter = pangramLetters[Math.floor(Math.random() * pangramLetters.length)];
+    }
+    pangramLetters.splice(pangramLetters.indexOf(middleLetter), 1);
+
+    // for each unique letter in word, assign to hex
+    for (let i = 0; i < pangramLetters.length; i++) {
+        outerHexagons[i].innerText = pangramLetters[i];
+    }
+    centralHexagon.innerText = middleLetter;
+}
 
 /**
  * Shuffles the letters around in the outer hexagons
@@ -147,19 +172,19 @@ const enter = () => {
     if (word.length > 0) {
         if (isValid && word.length < 4) {
             isValid = false;
-            incorrectWord("Not long enough!");
+            incorrectWord("Too short");
         }
         if (isValid && !word.includes(middleLetter)) {
             isValid = false;
-            incorrectWord("No middle letter!");
+            incorrectWord("Missing centre letter");
         }
         if (isValid && !dictionary.includes(word.toLowerCase())) {
             isValid = false;
-            incorrectWord("Not in dictionary!");
+            incorrectWord("Not in dictionary");
         }
         if (isValid && foundWordsList.includes(word)) {
             isValid = false;
-            incorrectWord("Already found!");
+            incorrectWord("Already found");
         }
         if (isValid) {
             for (let i = 0; i < word.length; i++) {
@@ -188,12 +213,37 @@ const correctWord = (word) => {
     foundWords.innerText += word + "\n";
     foundWordsList.push(word);
 
+    //check if pangram
+    let isPangram = true;
+    for (let i = 0; i < pangramLetters.length; i++) {
+        if (!word.includes(pangramLetters[i])) {
+            isPangram = false;
+            break;
+        }
+    }
+
     //add points
     let currentPoints = parseInt(points.innerText);
     let newPoints = word.length + 1;
     if (word.length === 4) newPoints = 1;
+    if (isPangram) newPoints += 7;
     points.innerText = currentPoints + newPoints;
 
+    //update number of words found
+    wordCount.innerText = foundWordsList.length;
+
+    //show positive message
+    if (isPangram) {
+        showGoodMessage("Pangram!");
+    } else if (word.length === 4) {
+        showGoodMessage("Good!");
+    } else if (word.length < 7) {
+        showGoodMessage("Great!");
+    } else {
+        showGoodMessage("Amazing!");
+    }
+
+    //reset entry
     entryContent.innerText = "";
 };
 
@@ -210,6 +260,19 @@ const incorrectWord = (error) => {
         entryContent.classList.remove("shake");
     });
 };
+
+/**
+ * Show a message without the shake
+ * @param {} message 
+ */
+const showGoodMessage = (message) => {
+    messageBox.innerText = message;
+    messageBox.classList.add("valid");
+    setTimeout(() => {
+        messageBox.innerText = "";
+       messageBox.classList.remove("valid");
+    }, 1000);
+}
 
 /**
  * Helper function to shuffle an array
