@@ -1226,6 +1226,7 @@ acadialite
 acadian
 acadie
 acaena
+acai
 acajou
 acajous
 acalculia
@@ -9715,6 +9716,7 @@ amarantite
 amarantus
 amarelle
 amarelles
+Amaretti
 amarettos
 amarevole
 amargosa
@@ -19261,6 +19263,7 @@ areopagus
 areosystyle
 areostyle
 areotectonics
+arepa
 arere
 arerola
 areroscope
@@ -44373,6 +44376,7 @@ calamander
 calamansi
 calamar
 calamary
+calamari
 calamariaceae
 calamariaceous
 calamariales
@@ -46124,6 +46128,7 @@ canoeman
 canoes
 canoewood
 canoing
+canola
 canon
 canoncito
 canones
@@ -97902,6 +97907,7 @@ eminently
 emir
 emirate
 emirates
+emirati
 emirs
 emirship
 emys
@@ -141292,6 +141298,7 @@ hoys
 hoise
 hoised
 hoises
+hoisin
 hoising
 hoist
 hoistaway
@@ -149781,6 +149788,7 @@ indictor
 indictors
 indicts
 indidicia
+indie
 indienne
 indies
 indiferous
@@ -165539,6 +165547,7 @@ lacier
 laciest
 lacily
 lacinaria
+lacinato
 laciness
 lacinesses
 lacing
@@ -167662,6 +167671,7 @@ latrocinium
 latrodectus
 latron
 lats
+latte
 latten
 lattener
 lattens
@@ -181613,9 +181623,13 @@ membranula
 membranule
 membrette
 membretto
+meme
 memento
 mementoes
 mementos
+memes
+memey
+memier
 meminna
 memnon
 memnonian
@@ -185302,6 +185316,7 @@ midwise
 midwived
 midwives
 midwiving
+mirin
 myectomy
 myectomize
 myectopy
@@ -197004,6 +197019,7 @@ neptunist
 neptunium
 neral
 nerd
+nerdier
 nerds
 nere
 nereid
@@ -198153,6 +198169,7 @@ niftiest
 niftiness
 nigel
 nigella
+niger
 nigeria
 nigerian
 nigerians
@@ -198278,6 +198295,7 @@ nightwards
 nightwear
 nightwork
 nightworker
+nigiri
 nignay
 nignye
 nigori
@@ -210948,6 +210966,7 @@ onerously
 onerousness
 ones
 oneself
+onesie
 onesigned
 onethe
 onetime
@@ -225186,6 +225205,7 @@ particulate
 particule
 partie
 partied
+partier
 parties
 partigen
 partying
@@ -227828,6 +227848,7 @@ pennatularian
 pennatulid
 pennatulidae
 pennatuloid
+penne
 penned
 penneech
 penneeck
@@ -230404,6 +230425,7 @@ pestle
 pestled
 pestles
 pestling
+pesto
 pestology
 pestological
 pestologist
@@ -251035,6 +251057,7 @@ proscriptiveness
 proscutellar
 proscutellum
 prose
+prosecco
 prosecrecy
 prosecretin
 prosect
@@ -258099,6 +258122,7 @@ raisins
 raison
 raisonne
 raisons
+raita
 raja
 rajab
 rajah
@@ -258223,6 +258247,7 @@ rambutan
 rambutans
 ramdohrite
 rame
+ramen
 rameal
 ramean
 ramed
@@ -281342,6 +281367,8 @@ selfheals
 selfhypnotization
 selfhood
 selfhoods
+selfie
+selfies
 selfing
 selfish
 selfishly
@@ -283155,6 +283182,7 @@ sensatorial
 sense
 sensed
 senseful
+sensei
 senseless
 senselessly
 senselessness
@@ -286325,6 +286353,7 @@ shish
 shisham
 shishya
 shisn
+shiso
 shist
 shyster
 shysters
@@ -311456,6 +311485,7 @@ suspiring
 suspirious
 susquehanna
 suss
+sussed
 sussex
 sussexite
 sussexman
@@ -313482,6 +313512,7 @@ tamarao
 tamaraos
 tamarau
 tamaraus
+tamari
 tamaricaceae
 tamaricaceous
 tamarin
