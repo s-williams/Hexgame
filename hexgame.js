@@ -210,8 +210,9 @@ const enter = () => {
  */
 const correctWord = (word) => {
     //add word to list
-    foundWords.innerText += word + "\n";
     foundWordsList.push(word);
+    foundWordsList.sort()
+    foundWords.innerText = foundWordsList.join("\n");
 
     //check if pangram
     let isPangram = true;
