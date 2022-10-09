@@ -18290,6 +18290,7 @@ aramis
 aramitess
 aramu
 aramus
+arancini
 aranea
 araneae
 araneid
@@ -32354,6 +32355,8 @@ bestiaries
 bestiarist
 bestick
 besticking
+bestie
+besties
 bestill
 besting
 bestink
@@ -37671,6 +37674,8 @@ bonnock
 bonnocks
 bonnwis
 bono
+bonobo
+bonobos
 bononian
 bonorum
 bonos
@@ -194775,6 +194780,8 @@ mzee
 mzungu
 naam
 naaman
+naan
+naans
 naassenes
 nabak
 nabal
@@ -196646,6 +196653,8 @@ neocolonialist
 neocolonialists
 neocolonially
 neocomian
+neocon
+neocons
 neoconcretist
 neoconservative
 neoconstructivism
@@ -197696,6 +197705,7 @@ newar
 newari
 newark
 newberyite
+newbie
 newborn
 newbornness
 newborns
@@ -206706,6 +206716,10 @@ nonzonated
 nonzoologic
 nonzoological
 nonzoologically
+noob
+noobie
+noobies
+noobs
 noodle
 noodled
 noodledom
@@ -254877,6 +254891,8 @@ pups
 pupulo
 pupuluca
 pupunha
+pupusa
+pupusas
 puquina
 puquinan
 purana
@@ -271986,6 +272002,8 @@ romaunts
 romble
 rombos
 rombowline
+romcom
+romcoms
 rome
 romeine
 romeite
@@ -284739,6 +284757,7 @@ sextilis
 sextillion
 sextillions
 sextillionth
+sexting
 sextipara
 sextipartite
 sextipartition
@@ -285679,6 +285698,7 @@ sheerlegs
 sheerly
 sheerness
 sheers
+sheesh
 sheet
 sheetage
 sheeted
@@ -301458,6 +301478,7 @@ stentorophonic
 stentorphone
 stentors
 stentrel
+stents
 step
 stepaunt
 stepbairn
@@ -303267,6 +303288,8 @@ stovepipes
 stover
 stovers
 stoves
+stovetop
+stovetops
 stovewood
 stovies
 stoving
@@ -318041,6 +318064,7 @@ textiferous
 textile
 textiles
 textilist
+texting
 textless
 textlet
 textman
