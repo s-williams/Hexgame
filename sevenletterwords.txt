@@ -1176,7 +1176,6 @@ citations
 sheffield
 emotions
 prospects
-lexmark
 cleaners
 cashiers
 remarkable
@@ -1189,7 +1188,6 @@ villages
 dietary
 symphony
 marilyn
-findlaw
 isolation
 matched
 rational

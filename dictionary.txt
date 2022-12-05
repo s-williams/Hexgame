@@ -59207,6 +59207,7 @@ clue
 clued
 clueing
 clueless
+cluelessly
 clues
 cluff
 cluing
@@ -104333,6 +104334,7 @@ ethynylation
 ethynyls
 ethysulphuric
 etiam
+etic
 etiogenic
 etiolate
 etiolated
@@ -110229,6 +110231,7 @@ feiseanna
 feist
 feistier
 feistiest
+feistiness
 feists
 feisty
 felafel
@@ -151174,6 +151177,8 @@ inness
 innest
 innet
 innholder
+innie
+innies
 inning
 innings
 inninmorite
@@ -163644,6 +163649,7 @@ koso
 kosong
 kosos
 kosotoxin
+kosovo
 koss
 kossaean
 kossean
@@ -288053,6 +288059,7 @@ sissies
 sissiest
 sissification
 sissified
+sissifies
 sissify
 sissiness
 sissing
@@ -289901,6 +289908,7 @@ slounger
 slour
 sloush
 slovak
+slovakia
 slovakian
 slovakish
 slovaks
