@@ -214603,6 +214603,7 @@ outrivalled
 outrivalling
 outrivals
 outrive
+outro
 outroad
 outroar
 outroared
@@ -214629,6 +214630,7 @@ outroot
 outrooted
 outrooting
 outroots
+outros
 outrove
 outroved
 outroving
@@ -245447,6 +245449,7 @@ prepotential
 prepotently
 prepped
 preppie
+preppier
 preppies
 prepping
 preppy
@@ -269621,6 +269624,11 @@ ribbier
 ribbiest
 ribbing
 ribbings
+ribbit
+ribbited
+ribbiters
+ribbiting
+ribbits
 ribble
 ribbon
 ribbonback
@@ -315046,6 +315054,7 @@ telegraphoscope
 telegraphs
 telegraphy
 telegu
+telehealth
 telehydrobarometer
 telei
 teleia
@@ -330988,6 +330997,7 @@ ulvan
 ulvas
 ulyssean
 ulysses
+umami
 umangite
 umangites
 umatilla
@@ -360425,6 +360435,8 @@ webfeet
 webfoot
 webfooted
 webfooter
+webhost
+webhosts
 webless
 weblike
 webmaker
@@ -366230,6 +366242,10 @@ yonner
 yonnie
 yonside
 yont
+yoohoo
+yoohooed
+yoohooing
+yoohoos
 yook
 yoop
 yore
