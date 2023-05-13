@@ -17642,6 +17642,7 @@ appleroot
 apples
 applesauce
 applesnits
+applet
 applewife
 applewoman
 applewood
@@ -22153,6 +22154,8 @@ aswough
 asyla
 asylabia
 asyle
+asylee
+asylees
 asyllabia
 asyllabic
 asyllabical
@@ -35886,7 +35889,9 @@ blindstories
 blindstory
 blindweed
 blindworm
+bling
 blinger
+blinging
 blini
 blinis
 blink
@@ -36037,6 +36042,9 @@ blocky
 blocs
 blodite
 bloedite
+blog
+blogging
+blogs
 blok
 bloke
 blokes
@@ -80938,6 +80946,7 @@ dentistries
 dentistry
 dentists
 dentition
+dentitions
 dentoid
 dentolabial
 dentolingual
@@ -82091,6 +82100,9 @@ deselected
 deselecting
 deselects
 desemer
+desensitise
+desensitised
+desensitises
 desensitises
 desensitization
 desensitizations
@@ -82723,6 +82735,7 @@ detent
 detente
 detentes
 detention
+detentions
 detentive
 detents
 detenu
@@ -88707,6 +88720,7 @@ dissective
 dissector
 dissectors
 dissects
+dissed
 disseise
 disseised
 disseisee
@@ -88793,6 +88807,7 @@ disserviceableness
 disserviceably
 disservices
 disserving
+disses
 dissettle
 dissettlement
 dissever
@@ -132291,6 +132306,8 @@ handgrips
 handgun
 handguns
 handhaving
+handheld
+handhelds
 handhold
 handholds
 handhole
@@ -201016,6 +201033,7 @@ nonethnologic
 nonethnological
 nonethnologically
 nonethyl
+nonets
 nonetto
 noneugenic
 noneugenical
@@ -220037,6 +220055,7 @@ pachytene
 pachytrichous
 pachytylus
 pachyvaginitis
+pacier
 pacifiable
 pacific
 pacifica
@@ -234788,6 +234807,8 @@ pissant
 pissants
 pissasphalt
 pissed
+pisser
+pissers
 pisses
 pissing
 pissodes
@@ -245449,6 +245470,7 @@ prepotential
 prepotently
 prepped
 preppie
+preppier
 preppier
 preppies
 prepping
@@ -257999,6 +258021,7 @@ rara
 rare
 rarebit
 rarebits
+rared
 rarefaction
 rarefactional
 rarefactive
@@ -273862,6 +273885,7 @@ sahara
 saharan
 saharian
 saharic
+sahel
 sahh
 sahib
 sahibah
@@ -275778,6 +275802,8 @@ satanophobia
 satanship
 satara
 sataras
+satay
+satays
 satchel
 satcheled
 satchelful
@@ -282507,7 +282533,10 @@ sensism
 sensist
 sensistic
 sensitisation
+sensitise
+sensitised
 sensitiser
+sensitises
 sensitises
 sensitive
 sensitively
@@ -289466,6 +289495,7 @@ slantly
 slants
 slantways
 slantwise
+slanty
 slap
 slapdab
 slapdash
@@ -291832,6 +291862,7 @@ soary
 soave
 soavemente
 soaves
+soba
 sobbed
 sobber
 sobbers
@@ -312747,6 +312778,7 @@ talmudistical
 talmudists
 talmudization
 talmudize
+talnet
 talocalcaneal
 talocalcanean
 talocrural
@@ -316605,6 +316637,7 @@ territoried
 territories
 territory
 territs
+terroir
 terron
 terror
 terrorful
