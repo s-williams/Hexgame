@@ -17643,6 +17643,7 @@ apples
 applesauce
 applesnits
 applet
+applets
 applewife
 applewoman
 applewood
@@ -17894,6 +17895,7 @@ approximative
 approximatively
 approximativeness
 approximator
+apps
 appt
 apptd
 appui
@@ -88857,6 +88859,7 @@ dissimulators
 dissimule
 dissimuler
 dissinew
+dissing
 dissipable
 dissipate
 dissipated
@@ -166777,6 +166780,7 @@ lattermath
 lattermint
 lattermost
 latterness
+lattes
 lattice
 latticed
 latticeleaf
@@ -283837,6 +283841,7 @@ settlings
 settlor
 settlors
 settos
+Setts
 settsman
 setuid
 setula
@@ -294108,6 +294113,7 @@ spalt
 spam
 spammed
 spamming
+spams
 span
 spanaemia
 spanaemic
@@ -296769,6 +296775,8 @@ sporification
 sporing
 sporiparity
 sporiparous
+spork
+sporks
 sporoblast
 sporobolus
 sporocarp
@@ -316788,6 +316796,7 @@ testao
 testar
 testata
 testate
+testates
 testation
 testator
 testators
