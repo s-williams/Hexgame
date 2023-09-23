@@ -315486,6 +315486,7 @@ tellus
 telly
 telmatological
 telmatology
+telnet
 teloblast
 teloblastic
 telocentric
