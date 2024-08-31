@@ -14,6 +14,8 @@ let yesterdayPangram = null;
 
 let dictionary = [];
 let foundWordsList = [];
+
+let typingLock = true;
 /**
  * sets up game
  */
@@ -86,6 +88,7 @@ const start = () => {
             }
         });
     });
+    typingLock = false;
 };
 
 /**
@@ -128,6 +131,7 @@ const shuffle = () => {
  * @param {*} event button press event
  */
 const addLetter = (event) => {
+    if (typingLock) return;
     const letter = event.currentTarget.innerText;
     entryContent.innerText += letter;
     validateLetters();
@@ -138,6 +142,7 @@ const addLetter = (event) => {
  * @param {*} event type event
  */
 const typeLetter = (event) => {
+    if (typingLock) return;
     if (!event.metaKey) {
         event.preventDefault();
         if (event.code === "Backspace" || event.code === "Delete") deleteLetter();
@@ -266,12 +271,14 @@ const correctWord = (word) => {
  * @param {*} error 
  */
 const incorrectWord = (error) => {
+    typingLock = true;
     entryContent.classList.add("shake");
     messageBox.innerText = error;
     entryContent.addEventListener("animationend", () => {
         entryContent.innerText = "";
         messageBox.innerText = "";
         entryContent.classList.remove("shake");
+        typingLock = false;
     });
 };
 
