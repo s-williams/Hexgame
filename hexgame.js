@@ -214,12 +214,9 @@ const enter = () => {
             }
         }
         if (isValid) {
-            console.log("correct word");
             correctWord(word);
         }
     }
-
-
 };
 
 /**
