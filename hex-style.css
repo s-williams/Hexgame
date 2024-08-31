@@ -36,6 +36,12 @@ body {
     text-align: left;
 }
 
+#yesterdayPangram:not(.revealed) {
+    background: white;
+    cursor: pointer;
+    color: transparent;
+}
+
 #left,
 #right {
     float: left;

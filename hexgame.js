@@ -10,6 +10,7 @@ let messageBox = null;
 let foundWords = null;
 let points = null;
 let wordCount = null;
+let yesterdayPangram = null;
 
 let dictionary = [];
 let foundWordsList = [];
@@ -26,15 +27,23 @@ const start = () => {
     foundWords = document.querySelector("#foundWords");
     points = document.querySelector("#points");
     wordCount = document.querySelector("#wordCount");
+    yesterdayPangram = document.querySelector("#yesterdayPangram");
 
     document.querySelector("#deleteButton").addEventListener("click", deleteLetter);
     document.querySelector("#shuffleButton").addEventListener("click", shuffle);
     document.querySelector("#enterButton").addEventListener("click", enter);
+    yesterdayPangram.addEventListener("click", () => { yesterdayPangram.classList.add("revealed")});
+
     document.addEventListener("keydown", typeLetter);
 
     allHexagons.forEach((ele) => {
         ele.addEventListener("click", addLetter);
     });
+
+    // Used to get yesterday's pangram
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1)
+    const yesterdayRng = new Math.seedrandom("" + yesterday.getFullYear() + yesterday.getMonth() + yesterday.getDate());
 
     // seed the Math random function based on the current date
     // https://github.com/davidbau/seedrandom
@@ -54,6 +63,10 @@ const start = () => {
             return response.text().then((file) => {
                 const lines = file.split(/\n/g);
                 const count = (lines || []).length;
+
+                const noYesterday = Math.floor(yesterdayRng() * count);
+                const pangramYesterday = lines[noYesterday].trim().toUpperCase();
+                yesterdayPangram.innerText = pangramYesterday;
 
                 const no = Math.floor(Math.random() * count);
                 const pangram = lines[no].trim();
