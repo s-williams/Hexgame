@@ -124,6 +124,7 @@ body {
     -ms-transform: rotate(-60deg) skewY(30deg);
     transform: rotate(-60deg) skewY(30deg);
     overflow: hidden;
+    pointer-events: none;
 }
 
 #grid li .hexagon {
@@ -147,6 +148,7 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     cursor: pointer;
+    pointer-events: initial;
 }
 
 #grid li .central-hexagon {
